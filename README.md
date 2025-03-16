@@ -2,6 +2,9 @@
 
 This is a web app that allows you to search for users on Github.
 
+![](docs/images/landingpage.png)
+
+---
 ## Technologies Used
 
 - React
