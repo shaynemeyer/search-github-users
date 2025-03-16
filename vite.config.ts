@@ -8,6 +8,17 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/vitest.setup.ts',
+    coverage: {
+      enabled: true,
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**/*.{js,ts,tsx}'],
+      exclude: [
+        'src/config/**',
+        'src/vendor/**',
+        'src/hooks/**',
+        'src/apolloClient.ts',
+      ],
+    },
   },
   resolve: {
     alias: {
